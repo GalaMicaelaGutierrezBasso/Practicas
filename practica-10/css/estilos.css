@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y tipografía */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #ff4c29;
+    text-align: center;
+}
+
+/* Imagen principal */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 76, 41, 0.6);
+}
+
+/* Menú de navegación */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 76, 41, 0.2);
+}
+
+ul li a:hover {
+    background-color: #ff4c29;
+    color: #fff;
+}
+
+/* Listas de reparto y episodios */
+.list li {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 8px 0;
+    padding: 10px;
+    border-left: 4px solid #ff4c29;
+    transition: background 0.3s ease;
+}
+
+.list li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Párrafos */
+p {
+    margin: 15px auto;
+    max-width: 800px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+/* Animación sutil */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    animation: fadeIn 1.2s ease-in-out;
+}
+/*Declaración de uso de Inteligencia Artificial: La utilize porque se pedía utilizarla en la consigna de la práctica. La IA para generar una página que pueda funcionar con las otras ya creadas necesita instrucciones claras y específicas.*/
