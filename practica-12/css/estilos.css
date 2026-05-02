@@ -1,0 +1,29 @@
+.letra {
+  color: #4A2C2A; /* marrón más elegante */
+  font-family: 'Montserrat', 'Times New Roman', serif;
+}
+
+p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1.6; /* mejora la legibilidad */
+}
+#tituloprincipal {
+  background-color: #CBE1E9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px; /* esquinas redondeadas */
+}
+#tituloprincipal {
+  background-color: #CBE1E9;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#tituloprincipal:hover {
+  background-color: #B5D4E0; /* efecto al pasar el mouse */
+}
+.fondo {
+  background: linear-gradient(135deg, #FDEBD0, #FAD7A0);
+}
