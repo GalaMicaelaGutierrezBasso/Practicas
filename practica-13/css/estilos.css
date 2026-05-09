@@ -1,0 +1,50 @@
+nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+nav li {
+    display: inline-block
+}
+nav a {
+    font-size: 2rem;
+    line-height: 4rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:link {
+    background-color: skyblue;
+    color: black;
+}
+nav a:visited {
+    background-color: skyblue;
+    color: black;
+}
+nav a:hover {
+    background-color: skyblue;
+    color: blue;
+}
+nav a:active {
+    background-color: skyblue;
+    color: red;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: red;
+}
+div{
+    box-sizing: border-box;
+    width: 100px;
+}
+footer {
+    background-color: rgb(245, 157, 157);
+}
