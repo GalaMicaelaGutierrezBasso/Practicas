@@ -1,0 +1,14 @@
+let nombre = 'Gala';
+let apellido = 'Gutierrez';
+console.log(nombre + ' ' +apellido);
+let edad = 19;
+const universidad = 'UNA';
+console.log(edad);
+console.log(universidad);
+nombre = 'Gala Micaela';
+apellido = 'Gutierrez Basso';
+edad = 19.5;
+universidad = 'Universidad Nacional de las Artes';
+console.log(nombre + ' ' + apellido);
+console.log(edad);
+console.log(universidad);
