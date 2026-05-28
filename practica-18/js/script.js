@@ -1,0 +1,16 @@
+alert('Al aceptar cambia todo');
+let h1 = document.querySelector('h1');
+h1.innerText = 'Hola, como estas?';
+h1.style.color = 'red';
+h1.style.fontStyle = 'cursive';
+h1.style.backgroundColor = 'black';
+let h2 = document.querySelector('h2');
+h2.innerText = 'Adios';
+h2.style.color = 'blue';
+h2.style.fontStyle = 'cursive';
+h2.style.backgroundColor = 'red';
+let p = document.querySelector('p');
+p.innerText = 'Todo bien';
+p.style.color = 'green';
+p.style.fontStyle = 'cursive';
+p.style.backgroundColor = 'black';
