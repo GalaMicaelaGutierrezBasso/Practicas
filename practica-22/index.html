@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>calculadora de descuento</title>
+</head>
+<body>
+  <form id="formulario">
+    <label for="precio">Precio:</label>
+    <input id="precio" type="number" name="precio">
+    <label for="descuento">Descuento (%):</label>
+    <input id="descuento" type="number" name="descuento">
+    <input type="submit" value="Calcular">
+  </form>
+  <p id="resultado"></p>
+  <script>
+    const formulario = document.querySelector("#formulario");
+    const preciopuesto = document.querySelector("#precio");
+    const descuentopuesto = document.querySelector("#descuento");
+    const resultado = document.querySelector("#resultado");
+    formulario.addEventListener("submit", function(event) {
+      event.preventDefault();
+      let precio = parseFloat(preciopuesto.value);
+      let descuento = parseFloat(descuentopuesto.value);
+      let precioFinal = precio - (precio * descuento / 100);
+      resultado.textContent = "El precio final es: $" + precioFinal;
+    });
+  </script>
+</body>
+</html>
+<!--Decalracion de IA: Use la IA para comprobar que el código funcione correctamente y este bien hecho-->
