@@ -2,14 +2,57 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Hola</title>
+        <title>Control de luces móviles</title>
         <link href="css/estilos.css" rel="stylesheet">
     </head>
     <body>
-    <main>
-        <h1>Buenasss</h1>
-        <p>Hola</p>
-    </main>
-    <script src="js/script.js"></script>
+        <main>
+            <h1>Control de las luces móviles de las obras</h1>
+            <section class="card">
+                <h2>Configuración inicial</h2>
+                <form id="config-form">
+                    <label for="obra-count">Cantidad de obras:</label>
+                    <input type="number" id="obra-count" min="1" step="1" required>
+                    <button type="submit" id="start-button">Iniciar carga</button>
+                </form>
+                <div id="config-error" class="error" aria-live="polite"></div>
+            </section>
+            <section id="obra-section" class="card" hidden>
+                <h2>Registrar obra <span id="obra-index">1</span>/<span id="obra-total">0</span></h2>
+                <form id="obra-form">
+                    <label for="obra-nombre">Nombre de la obra:</label>
+                    <input type="text" id="obra-nombre" required>
+
+                    <label for="obra-luces">Cantidad de luces móviles:</label>
+                    <input type="number" id="obra-luces" min="1" step="1" required>
+
+                    <label for="obra-horas">Tiempo de funcionamiento por día (horas):</label>
+                    <input type="number" id="obra-horas" min="0.1" step="0.1" required>
+
+                    <label for="obra-consumo">Consumo por hora de cada luz (kWh):</label>
+                    <input type="number" id="obra-consumo" min="0.001" step="0.001" required>
+
+                    <label for="obra-costo">Costo por kWh:</label>
+                    <input type="number" id="obra-costo" min="0.01" step="0.01" required>
+
+                    <button type="submit" id="add-button">Agregar obra</button>
+                </form>
+                <div id="obra-error" class="error" aria-live="polite"></div>
+                <p id="obra-progress" class="info"></p>
+            </section>
+            <section id="result-section" class="card" hidden>
+                <button id="calc-button" disabled>Calcular resultados</button>
+            </section>
+            <section id="output-section" class="card" hidden>
+                <h2>Resultados</h2>
+                <div class="result-item"><strong>Consumo diario total:</strong> <span id="res-total-consumo"></span></div>
+                <div class="result-item"><strong>Consumo diario promedio por obra:</strong> <span id="res-promedio-consumo"></span></div>
+                <div class="result-item"><strong>Obra con mayor tiempo de funcionamiento:</strong> <span id="res-mayor-obra"></span></div>
+                <div class="result-item"><strong>Costo diario de esa obra:</strong> <span id="res-mayor-costo"></span></div>
+                <div class="result-item"><strong>Porcentaje de obras con más de 20 luces:</strong> <span id="res-porcentaje-luces"></span></div>
+                <button id="reset-button">Reiniciar</button>
+            </section>
+        </main>
+        <script src="js/script.js"></script>
     </body>
 </html>
